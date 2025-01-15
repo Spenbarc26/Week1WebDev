@@ -45,29 +45,33 @@
 
     <form action="/action_page.php">
         <label for="pname">Name:</label>
-        <input type="text" id="pname" name="pname" value=""><br>
+        <input type="text" id="pname" name="pname" value="" required><br>
         <label for="number">Phone:</label>
-        <input type="text" id="number" name="number" value=""><br>
-        <label for="small">Small:</label>
+        <input type="text" id="number" name="number" value="" required><br>
+        <p>Size:</p>
         <input type="radio" id="small" name="size" value="Small">
-        <label for="medium">Medium:</label>
+        <label for="small">Small</label>
         <input type="radio" id="medium" name="size" value="Medium">
-        <label for="large">Large:</label>
+        <label for="medium">Medium</label>
         <input type="radio" id="large" name="size" value="Large">
-        <label for="extrlarge">Extra Large:</label>
-        <input type="radio" id="extrlarge" name="size" value="Extra Large"><br><br>
-        <label for="toppings">Toppings:</label>
+        <label for="large">Large</label>
+        <input type="radio" id="extrlarge" name="size" value="Extra Large">
+        <label for="extrlarge">Extra Large</label><br><br>
+        <label for="toppings">Toppings:</label><br>
         <select id="toppings" name="toppings" size="10" multiple>
             <option value="Pepperoni">Pepperoni</option>
             <option value="Bacon">Bacon</option>
             <option value="Ham">Ham</option>
             <option value="Mushrooms">Mushrooms</option>
-            <option value="Green Olives">Green Olives</option>
+            <option value="Olives">Green Olives</option>
             <option value="Extra Cheese">Extra Cheese</option>
             <option value="Chicken">Chicken</option>
             <option value="Peppers">Peppers</option>
-            <option value=""
+            <option value="Sausage">Sausage</option>
+            <option value="Onions">Onions</option>
         </select>
+        <p>Hold control(Windows) or command(Mac) to select multiple toppings</p><br>
+        <input type="submit" value="Submit">
 
     </form>
 
