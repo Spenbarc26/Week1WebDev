@@ -46,9 +46,10 @@
     <form action="">
         <h4>Fill out the required sections and place your order</h4>
         <label for="pname">Name:</label>
-        <input type="text" id="pname" name="pname" value="" required><br>
+        <input type="text" id="pname" name="pname" required><br>
         <label for="number">Phone:</label>
-        <input type="text" id="number" name="number" value="" required><br>
+        <input type="text" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <p>Ex: 012-345-6789</p>
         <p>Size:</p>
         <input type="radio" id="small" name="size" value="Small">
         <label for="small">Small</label>
@@ -72,6 +73,8 @@
             <option value="Onions">Onions</option>
         </select>
         <p>Hold control(Windows) or command(Mac) to select multiple toppings</p><br>
+        <p>Enter any additional order or delivery requests here</p>
+        <textarea name="AddInfo" rows="5" columns="30"></textarea><br>
         <input type="submit" value="Submit">
 
     </form>
